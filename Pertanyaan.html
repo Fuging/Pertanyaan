@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="in">
+<head>
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible"
+    content="ie=edge">
+    <meta charset="UTF-8">
+    <title>Pertanyaan</title>
+</head>
+<body>
+    <h1>Apakah Kamu Gila?</h1>
+    <button class="a" onclick="Iya()" id="iya">Iya</button>
+    &nbsp
+    &nbsp
+    &nbsp
+    <button class="b" onclick="Tidak()" id="tidak">Tidak</button>
+    <style>
+        .a {
+            width: 50px;
+            height: 50px
+        }
+        .b {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            top: 10;
+            left: 10;
+        }
+    </style>
+    <script>
+        function Iya() {
+            alert("Yahahah orang gila🤣🤣🤣")
+        }
+        function Tidak() {
+const btn = document.getElementById("tidak")
+    btn.style.left = `${Math.ceil(Math.random() * 50)}%`;
+    btn.style.top = `${Math.ceil(Math.random() * 50)}%`;
+        }
+    </script>
+</body>
+</html>
